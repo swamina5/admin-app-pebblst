@@ -1,0 +1,18 @@
+<svg id="Back_Button" data-name="Back Button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.999" height="32" viewBox="0 0 31.999 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_802" data-name="Rectangle 802" width="31.999" height="32" fill="#b2b2b2"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_786" data-name="Rectangle 786" width="12.695" height="7.303" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1439" data-name="Group 1439" clip-path="url(#clip-path)">
+    <path id="Path_536" data-name="Path 536" d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0" transform="translate(0 0)" fill="#b2b2b2"/>
+  </g>
+  <g id="Group_1440" data-name="Group 1440" transform="translate(12 22.695) rotate(-90)">
+    <g id="Group_1421" data-name="Group 1421" clip-path="url(#clip-path-2)">
+      <path id="Path_534" data-name="Path 534" d="M.966,7.3A.965.965,0,0,1,.283,5.655L5.664.272a1,1,0,0,1,1.366,0l5.383,5.382a.966.966,0,0,1-1.366,1.366l-4.7-4.7-4.7,4.7A.962.962,0,0,1,.966,7.3" transform="translate(0 0.001)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
