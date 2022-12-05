@@ -1,36 +1,51 @@
 import React, { Component } from "react";
 import './Admin.css';
+import header from '../Assets/header-wave.png'
+import logo from '../Assets/pebblst-color-primary-logo.png'
+import { Helmet } from 'react-helmet';
+import Title from '../Components/Title'
+import Dashboard from '../Components/Dashboard'
+
+
 
 class Admin extends Component {
 
   render() {
     const divStyle = {
       position: "absolute",
-      left: "-80px",
+      left: "500px",
       transition: "0.3s",
-      padding: "15px",
+      padding: "30px",
       width: "100px",
       text_decoration: "none",
       font_size: "20px",
-      color: "white",
+      color: "black",
       border_radius: "0 5px 5px 0"
     };
 
+    const tableStyle = {
+
+    }
+
     return (      
       <body>
-
-        <div id="mySidenav" class="sidenav">
-          <a href="#" id="about">About</a>
-          <a href="#" id="blog">Blog</a>
-          <a href="#" id="projects">Projects</a>
-          <a href="#" id="contact">Contact</a>
+        
+        <div>
+          <Title/>     
         </div>
 
-        <div style={divStyle}>
-          <h2>Hoverable Sidenav Buttons</h2>
-          <p>Hover over the buttons in the left side navigation to open them.</p>
+
+            <div id="mySidenav" class="sidenav">
+              <a href="#" id="vendors">Brands and Vendors</a>
+              <a href="#" id="friends">Friends</a>
+            </div>
+
+          <div style={divStyle}>
         </div>
-          
+        <Dashboard />
+
+       
+
       </body>
 
       );

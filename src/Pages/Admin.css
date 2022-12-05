@@ -1,6 +1,6 @@
 #mySidenav a {
     position: absolute;
-    left: -80px;
+    left: 5px;
     transition: 0.3s;
     padding: 15px;
     width: 100px;
@@ -14,23 +14,15 @@
     left: 0;
   }
   
-  #about {
-    top: 20px;
-    background-color: #04AA6D;
+  #vendors {
+    top: 150px;
+    background-color: #68a9ae;
+  }
+
+  #friends {
+    top: 250px;
+    background-color: #68a9ae;
   }
   
-  #blog {
-    top: 80px;
-    background-color: #2196F3;
-  }
   
-  
-  #projects {
-    top: 140px;
-    background-color: #f44336;
-  }
-  
-  #contact {
-    top: 200px;
-    background-color: #555
-  }
+ 
