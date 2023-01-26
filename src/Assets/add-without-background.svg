@@ -1,0 +1,13 @@
+<svg id="Group_248" data-name="Group 248" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_194" data-name="Rectangle 194" width="16" height="16" fill="#68a9ae"/>
+    </clipPath>
+  </defs>
+  <g id="Plus_-_Add" data-name="Plus - Add">
+    <g id="Group_250" data-name="Group 250" clip-path="url(#clip-path)">
+      <path id="Path_118" data-name="Path 118" d="M14.545,9.455H1.455a1.455,1.455,0,1,1,0-2.909h13.09a1.455,1.455,0,1,1,0,2.909" fill="#68a9ae"/>
+      <path id="Path_119" data-name="Path 119" d="M6.545,14.546V1.455a1.455,1.455,0,0,1,2.909,0V14.546a1.455,1.455,0,1,1-2.909,0" fill="#68a9ae"/>
+    </g>
+  </g>
+</svg>
