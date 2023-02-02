@@ -8,8 +8,8 @@ function Title() {
   return (
     <div>
     <div className="Title">
-        <img style={{ position: "absolute", left: "0px", height: 50 }} src={logo} />
-        <h1 style ={{ position: "absolute", right: "100px", height: 30}}>Adminstrative Console</h1>
+        <img style={{ position: "absolute", left: "10px", height: 50 }} src={logo} />
+        <h1 style ={{ position: "absolute", right: "10px", height: 30}}>Adminstrative Console</h1>
 
     </div>
       <img style={{position: "absolute", top: 75}} src={header} />

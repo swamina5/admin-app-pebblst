@@ -36,7 +36,7 @@ class Admin extends Component {
 
 
             <div id="mySidenav" class="sidenav">
-              <a href="#" id="vendors">Brands and Vendors</a>
+              <a href="#" id="vendors">Brands & Vendors</a>
               <a href="#" id="friends">Friends</a>
             </div>
 
