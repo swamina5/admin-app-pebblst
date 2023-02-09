@@ -1,0 +1,12 @@
+/*  src/Dashboard.css  */
+.Dashboard {
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: baseline;
+    padding: 1em;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 0, 0);
+}
