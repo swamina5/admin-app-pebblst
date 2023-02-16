@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import './Admin.css';
 import header from '../Assets/header-wave.png'
 import logo from '../Assets/pebblst-color-primary-logo.png'
@@ -8,7 +8,18 @@ import Dashboard from '../Components/Dashboard'
 
 
 
+  function fetchData(e){
+    fetch("https://tmndlrtd2k.execute-api.us-east-2.amazonaws.com/test/vendor")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+    });
+    //console.log("its clicked!")
+  }
+
+
 class Admin extends Component {
+
 
   render() {
     const divStyle = {
@@ -36,7 +47,8 @@ class Admin extends Component {
 
 
             <div id="mySidenav" class="sidenav">
-              <a href="#" id="vendors">Brands & Vendors</a>
+              <a href="#" id="vendors" onClick={fetchData}>Brands & Vendors</a>
+              
               <a href="#" id="friends">Friends</a>
             </div>
 

@@ -8,6 +8,8 @@ export default function Dashboard() {
   return (
     <div style={{position: 'absolute', top: 83, left: 250, right: 500}}>
         <h2>Vendor Management</h2>
+
+        
         <hr />
         <p>Proposed Primary Brand Name:</p>
 
