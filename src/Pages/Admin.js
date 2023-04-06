@@ -26,7 +26,7 @@ export default function Admin() {
         const response = await fetch("https://tmndlrtd2k.execute-api.us-east-2.amazonaws.com/test/vendor");
         const json = await response.json();
         const vendors = json.body.map(vendor => {
-          return { vendor_name: vendor.vendor_name, possible_name: vendor.possible_name };
+          return { pebble_id: vendor.pebble_id, vendor_id: vendor.vendor_id, vendor_name: vendor.vendor_name, possible_name: vendor.possible_name };
         });
         setPosts({ body: vendors });
       } catch(error) {
@@ -36,13 +36,35 @@ export default function Admin() {
     fetchData();
   }, []);
 
+  const sendData = async (pebble_id, vendor_id, possible_name) => {
+    try {
+      const response = await fetch("https://tmndlrtd2k.execute-api.us-east-2.amazonaws.com/test/vendor", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          pebble_id: pebble_id,
+          vendor_id: vendor_id,
+          possible_name: possible_name
+        })
+      });
+      const json = await response.json();
+      console.log(json);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+
     return (      
       <body>
         <div>
           <Title/>     
         </div>
         <div id="mySidenav" className="sidenav">
-          <a href="#" id="vendors" onClick={useEffect}>Brands & Vendors</a>
+          <a href="#" id="vendors" >Brands & Vendors</a>
           <a href="#" id="friends">Friends</a>
         </div>
         <div style={divStyle}></div>
@@ -56,10 +78,10 @@ export default function Admin() {
                 <p className="vendor-name">Proposed Primary Brand Name: {post.possible_name}</p> 
                 <p className="possible-name">Suspected Error: {post.vendor_name}</p>
                 <div style={{position: "relative", top:-75, right:"-500px"}}>
-                  <button style={{height: '30px', width : '100px', backgroundColor: '#68a9ae'} }>
+                  <button style={{height: '30px', width : '100px', backgroundColor: '#68a9ae'} } onClick={() => sendData(post.pebble_id, post.vendor_id, post.possible_name)} >
                       Match
                   </button>
-                  <button style={{height: '30px', width : '100px', backgroundColor: '#68a9ae'}}>
+                  <button style={{height: '30px', width : '100px', backgroundColor: '#68a9ae'}}  >
                       Don't Match
                   </button>
                 </div>
