@@ -51,12 +51,13 @@ export default function Admin() {
       });
       const json = await response.json();
       console.log(json);
+      window.location.reload(false);
     } catch (error) {
       console.log(error);
     }
   };
 
-
+  
 
     return (      
       <body>
@@ -78,7 +79,7 @@ export default function Admin() {
                 <p className="vendor-name">Proposed Primary Brand Name: {post.possible_name}</p> 
                 <p className="possible-name">Suspected Error: {post.vendor_name}</p>
                 <div style={{position: "relative", top:-75, right:"-500px"}}>
-                  <button style={{height: '30px', width : '100px', backgroundColor: '#68a9ae'} } onClick={() => sendData(post.pebble_id, post.vendor_id, post.possible_name)} >
+                  <button style={{height: '30px', width : '100px', backgroundColor: '#68a9ae'} } onClick={() => {sendData(post.pebble_id, post.vendor_id, post.possible_name);}}  >
                       Match
                   </button>
                   <button style={{height: '30px', width : '100px', backgroundColor: '#68a9ae'}}  >
